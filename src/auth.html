@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
+</head>
+<body>
+<div class="cabinet">
+    <div class="container">
+        <h1>ВХОД В ЛИЧНЫЙ КАБИНЕТ </h1>
+        <form class="cabinet__form" id="auth">
+            <label>E-mail</label>
+            <div class="input input--mail"><input type="text" placeholder="Введите E-mail указанный при регистрации"></div>
+            <label>Пароль</label>
+            <div class="input input--pass"><input type="password" placeholder="Введите пароль указанный при регистрации"></div>
+            <div class="checkbox">
+                <input id="cheked1" type="checkbox" style="display: none;" checked>
+                <label for="cheked1">Запомнить меня на этом компьютере</label>
+            </div>
+            <div class="cabinet__form__btns">
+                <button type="button" class="btn btn--in">ВОЙТИ</button>
+                <a href="" class="btn btn--reg btn--red">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                <a href="" class="link">Забыли пароль?</a>
+            </div>
+        </form>
+
+        <div class="social">
+            <span>Или вы можете войти используя социальные сети:</span>
+            <a href="" target="_blank">
+                <img src="./img/icon/vk.png">
+            </a>
+            <a href="" target="_blank">
+                <img src="./img/icon/od.png">
+            </a>
+            <a href="" target="_blank">
+                <img src="./img/icon/fb.png">
+            </a>
+        </div>
+    </div>
+</div>
+<script src="./libs/jquery/jquery.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
