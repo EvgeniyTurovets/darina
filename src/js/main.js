@@ -22,6 +22,24 @@ $(function(){
         }
     });
 
+    $(".l-data-valid").validate()
+    $(".l-data-valid2").validate()
+    
     $.validator.messages.required = 'Это поле обязательно для заполнения';
     $.validator.messages.email = 'Email введен не правильно';
+
+
+    // личные данные
+    $( "#datepicker" ).datepicker({ dateFormat: 'yy.mm.dd' });
+
+    $('.input--watch button').on('click', function(){
+        $(this).closest('.input--watch').toggleClass('active')
+        if($(this).closest('.input--watch').hasClass('active') == 1){
+            $(this).closest('.input--watch').find('input').attr('type', 'text');
+        }
+        else{
+            $(this).closest('.input--watch').find('input').attr('type', 'password');
+        }
+    })
+    
 })

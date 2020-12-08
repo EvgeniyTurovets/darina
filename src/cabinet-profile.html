@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/fancybox/fancybox.min.css'>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
+</head>
+<body>
+<div class="cabinet">
+    <div class="container">
+        <h1>ЛИЧНЫЕ ДАННЫЕ</h1>
+        <div class="l-data">
+            <div class="l-data__wrap">
+                <form class="l-data__form l-data-valid">
+                    <div class="l-data__row">
+                        <div class="l-data-item">
+                            <label>Фамилия *</label>
+                            <div class="input input--edit"><input type="text" value="Ди каприо" name="name" placeholder="Введите вашу фамилию" required></div>
+                        </div>
+                        <div class="l-data-item">
+                            <label>Имя*</label>
+                            <div class="input input--edit"><input type="text" value="Ди каприо" name="name2" placeholder="Введите ваше имя" required></div>
+                        </div>
+                        <div class="l-data-item">
+                            <label>Отчество</label>
+                            <div class="input input--edit"><input type="text" value="Ди каприо" name="name3" placeholder="Введите ваше отчество"></div>
+                        </div>
+                        <div class="l-data-item mini">
+                            <label>Дата рождения</label>
+                            <div class="input"><input type="text" id="datepicker" value="01.01.1971" name="name4"></div>
+                        </div>
+                 
+                  
+                        <div class="l-data-item">
+                            <label>E-Mail *</label>
+                            <div class="input input--edit"><input type="email" value="test@test.test" name="name5" placeholder="Введите вашу фамилию" required></div>
+                        </div>
+                        <div class="l-data-item">
+                            <label>Телефон *</label>
+                            <div class="input input--edit"><input type="text" value="Ди каприо" name="name6" placeholder="Введите ваше имя" required></div>
+                        </div>
+                        <div class="l-data-item">
+                            <label>Город *</label>
+                            <div class="input input--edit"><input type="text" value="Ди каприо" name="name7" placeholder="Введите ваше отчество"></div>
+                        </div>
+                        <div class="l-data-item mini">
+                            <label>Клиентский ID</label>
+                            <div class="input input--diactive"><input type="text" value="123123544" name="name8"></div>
+                        </div>
+                    </div>
+                    <button type="submit" class="l-data__btn btn">СОХРАНИТЬ</button>
+                </form>
+            </div>
+            <div class="l-data__wrap">
+                <h2 class="l-data__h2">Сменить пароль</h2>
+                <form class="l-data__form l-data-valid2">
+                    <div class="l-data__row">
+                        <div class="l-data-item">
+                            <label>Старый пароль</label>
+                            <div class="input input--watch">
+                                <input type="password" value="qwerty" name="name9" placeholder="Введите вашу фамилию" required readonly>
+                                <button type="button"></button>
+                            </div>
+                        </div>
+                        <div class="l-data-item">
+                            <label>Новый пароль</label>
+                            <div class="input input--watch">
+                                <input type="password" value="" name="name10" placeholder="Придумайте новый пароль" required>
+                                <button type="button"></button>
+                            </div>
+                        </div>
+                        <div class="l-data-item">
+                            <label>Повторите новый пароль</label>
+                            <div class="input input--watch">
+                                <input type="password" value="" name="name11" placeholder="Придумайте новый пароль" required>
+                                <button type="button"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Пароль должен содержать только буквы латинского алфвита. В пароле должна присутствовать хотя бы одна заглавная буква и цифра.
+                        Пароль не должен содержать следующие символы: /, |, \ </p>
+                    <button type="submit" class="l-data__btn btn">СОХРАНИТЬ</button>
+                </form>
+            </div>
+
+            <div class="l-data__bot">
+                <div class="l-cabinet__top">
+                    <div class="l-cabinet__logo">
+                        <img src="./img/cabinet/main.jpg">
+                    </div>
+                    <label class="l-data__file btn" for="file">
+                        ИЗМЕНИТЬ АВАТАР
+                        <input type="file" id="file" style="display: none;">
+                    </label>
+                    <a href="" class="btn btn-arr">
+                        <img src="./img/icon/arrleft.png">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+
+<script src="./libs/jquery/jquery.min.js"></script>
+<script src="./libs/jq-valid/jq-valid.min.js"></script>
+<script src="./libs/fancybox/fancybox.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
