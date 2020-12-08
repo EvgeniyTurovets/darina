@@ -827,3 +827,95 @@ h1 {
     margin: 20px 0;
 }
 
+
+
+// моя техника
+.tech-item__img{
+    height: 180px;
+    background-size:  auto 150px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tech{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.tech-item{
+    width: 211px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    margin: 0 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.tech-item__title{
+    padding: 15px 5px;
+    text-align: center;
+    font-size: 16px;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+.tech-item__text{
+    padding: 15px 5px;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+}
+.tech-item__text__b{
+    font-weight: 500;
+    color: #333333;
+}
+.tech-item__text__b:not(:first-child){
+    margin-top: 15px;
+}
+
+.tech-item__btns{
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid #e6e6e6;
+    button{
+        border-radius: 10px;
+        height: 35px;
+        font-size: 12px;
+        width: 170px;
+        background-color: #fff;
+        border: 1px solid #3333;
+        font-weight: 500;
+        cursor: pointer;
+        transition: 0.1s all;
+    }
+    button:hover{
+        box-shadow: 0 0 5px rgba(0,0,0,.3);
+    }
+    button:first-child{
+        margin-bottom: 10px;
+    }
+    button.v-rem{
+        background-color: #e6e6e6;
+        border: 1px solid #b3b3b3;
+        pointer-events: none;
+        color: #999999;
+    }
+}
+
+.cabinet__form__btns.my-tech button{
+    width: 200px;
+}
+
+@media (max-width: 767px){
+    .cabinet__form__btns.my-tech {
+        flex-direction: column-reverse;
+    }
+    .tech-item{
+        width: calc(100% / 2 - 30px)
+    }
+}
+@media (max-width: 559px){
+    .tech-item{
+        width: calc(100% / 1 - 30px)
+    }
+}
