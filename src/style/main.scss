@@ -151,6 +151,7 @@ h1 {
     flex: 0 0 18px;
     border: 1px solid rgb(179,179,179);
     margin-right: 7px;
+    margin-top: -2px;
 }
 .checkbox input:checked + label:after{
     content: "";
@@ -159,7 +160,7 @@ h1 {
     width: 10px;
     height: 10px;
     position: absolute;
-    top: 5px;
+    top: 3px;
     left: 5px;
 }
 .cabinet__form__btns{
@@ -277,20 +278,18 @@ h1 {
 .modal-wrap{
     width: 100%;
     position: relative;
-}
-#regmodal{
     max-width: 700px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
-#regmodal p{
+.modal-wrap p{
     max-width: 468px;
     margin: 0 auto;
     font-size: 16px;
 }
-#regmodal a{
+.modal-wrap a{
     padding: 15px 20px;
     display: block;
     width: 313px;
@@ -408,7 +407,7 @@ h1 {
     }
 }
 @media(max-width: 424px){
-    #regmodal a{
+    .modal-wrap a{
         width: 100%;
         font-size: 14px;
     }
@@ -877,7 +876,7 @@ h1 {
     align-items: center;
     flex-direction: column;
     border-top: 1px solid #e6e6e6;
-    button{
+    a{
         border-radius: 10px;
         height: 35px;
         font-size: 12px;
@@ -887,14 +886,17 @@ h1 {
         font-weight: 500;
         cursor: pointer;
         transition: 0.1s all;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    button:hover{
+    a:hover{
         box-shadow: 0 0 5px rgba(0,0,0,.3);
     }
-    button:first-child{
+    a:first-child{
         margin-bottom: 10px;
     }
-    button.v-rem{
+    a.v-rem{
         background-color: #e6e6e6;
         border: 1px solid #b3b3b3;
         pointer-events: none;
@@ -917,5 +919,223 @@ h1 {
 @media (max-width: 559px){
     .tech-item{
         width: calc(100% / 1 - 30px)
+    }
+}
+
+
+// ДОБАВЛЕНИЕ ТЕХНИКИ
+.my-tech-add .input input{
+    padding-left: 15px;
+}
+.my-tech-add .input label{
+    margin-bottom: 10px;
+    display: block;
+    font-size: 16px;
+}
+
+.selectric{
+    border: 1px solid #d4d4d4;
+    box-shadow: 0 0 5px rgba(0,0,0,.3) inset;
+    border-radius: 10px;
+    height: 45px;
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+.my-tech-add{
+    display: flex;
+    align-items: flex-start;
+}
+.my-tech-add__left{
+    width: 452px;   
+}
+
+.my-tech-add__right{
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    border-radius: 10px;
+    width: 230px;
+    margin-left: 30px;
+    margin-top: 29px;
+    .my-tech-add__right__name{
+        padding: 10px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .tech-item__img{
+        background-size: auto 200px;
+        height: 245px;
+    }
+}
+
+.selectric .button:after{
+    width: 0px;
+    height: 5px;
+    border: 14px solid transparent;
+    border-top-color: #5f5f5f;
+    top: 22px;
+}
+.selectric .button{
+    background-color: transparent;
+    right: 5px;
+    top: 1px;
+}
+.selectric-hover .selectric .button:after {
+    border-top-color: #5f5f5f;
+}
+.selectric .label{
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+}
+
+.selectric-items{
+    border-radius: 10px;
+    background-color: #fff;
+}
+.selectric-items li{
+    font-size: 14px;
+}
+
+.my-tech-file__label{
+    height: 45px;
+    width: 302px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 17px;
+    border: 2px solid #999999;
+    background-image: url('../img/tech/file.png');
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center left 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #999999;
+    transition: 0.3s all;
+    cursor: pointer;
+    input{
+        display: none;
+    }
+}
+.my-tech-file__label:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+.my-tech-file__t{
+    font-size: 22px;
+    font-weight: 500;
+    color: #333333;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.my-tech-file__row{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.my-tech-file__check{
+    font-size: 16px;
+}
+
+.my-tech-file__right{
+    display: flex;
+    align-items: flex-start;
+    margin-top:7px;   
+}
+.my-tech-file__check{
+    padding-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.my-tech-file__ckeck-btn{
+    height: 32px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    color: #0071bc;
+    border: 1px solid #666666;
+    border-radius: 10px;
+    padding-left: 10px;
+    text-decoration: underline;
+    button{
+        cursor: pointer;
+        margin-left: 10px;
+        width: 30px;
+        border-left: 1px solid #666666;
+        height: 100%;
+        border-radius:  0 10px 10px 0;
+        position: relative;
+        background-color: transparent;
+    }
+    button:after{
+        content: "";
+        display: block;
+        position: absolute;
+        transform: rotate(45deg);
+        right: 8px;
+        top: 14px;
+        width: 13px;
+        height: 2px;
+        background-color: #e9454f;
+    }
+    button:before{
+        content: "";
+        display: block;
+        position: absolute;
+        transform: rotate(-45deg);
+        right: 8px;
+        top: 14px;
+        width: 13px;
+        height: 2px;
+        background-color: #e9454f;
+    }
+}
+
+@media(max-width: 960px){
+    .my-tech-file__row{
+        flex-direction: column;
+    }
+    .my-tech-file__right{
+        margin-top: 15px;
+    }
+}
+@media(max-width: 767px){
+    .my-tech-add{
+        flex-direction: column;
+        align-items: center;   
+    }
+    .my-tech-add__left{
+        width: 100%;
+    }
+    .my-tech-add__right{
+        margin: 25px 0;
+    }
+
+    .cabinet__form__btns.my-tech--add{
+        flex-direction: row;
+        .btn-arr{
+            margin-right: 15px;
+        }
+    }
+}
+
+@media(max-width: 559px){
+    .my-tech-file__right{
+        flex-direction: column;
+        
+    }
+    .my-tech-file__check{
+        margin: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width: 374px){
+    .my-tech-file__label{
+        width: 280px;
+        font-size: 16px;
+        background-size: 18px;
+        background-position: center left 9px;
+        padding-left: 23px;
     }
 }

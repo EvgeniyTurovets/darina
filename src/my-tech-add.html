@@ -7,7 +7,8 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel='stylesheet' type='text/css' media='screen' href='./libs/fancybox/fancybox.min.css'>
-
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/selectric/selectric.css'>
+   
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
@@ -15,78 +16,74 @@
 <body>
 <div class="cabinet">
     <div class="container">
-        <h1>МОЯ ТЕХНИКА</h1>
-        <div class="tech">
-            <div class="tech-item">
+        <h1>ДОБАВЛЕНИЕ ТЕХНИКИ</h1>
+        <div class="my-tech-add">
+            <div class="my-tech-add__left">
+                <div class="input">
+                    <label>Название *</label>
+                    <input type="text" placeholder="Введите желаемое название" required>
+                </div>
+                <div class="input">
+                    <label>Название *</label>
+                    <select class="c-select">
+                        <option>Выпадающий список типов техники</option>
+                        <option>типов техник 1</option>
+                        <option>типов техник 4</option>
+                        <option>типов техник 3</option>
+                        <option>типов техник 2</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label>Название *</label>
+                    <select class="c-select">
+                        <option>Выпадающий список типов техники</option>
+                        <option>типов техник 1</option>
+                        <option>типов техник 4</option>
+                        <option>типов техник 3</option>
+                        <option>типов техник 2</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label>Код из паспорта товара  *</label>
+                    <input type="text" placeholder="Текстовое поле для ввода кода" required>
+                </div>
+            </div>
+            <div class="my-tech-add__right">
                 <div class="tech-item__img" style="background-image: url('./img/tech/tech-item.png');"></div>
-                <div class="tech-item__title">Плита на дачном участке</div>
-                <div class="tech-item__text">
-                    <div class="tech-item__text__b">Отдельностоящая плита</div>
-                    <div>0F5 EC142 615 Gr</div>
-                    <div class="tech-item__text__b">Статус: На гарании</div>
-                    <div>Гарантия до: 09.10.2022</div>
-                    <div class="tech-item__text__b">Код из паспорта</div>
-                    <div>123 12 78 789 5541 1547</div>
-                </div>
-                <div class="tech-item__btns">
-                    <a href="">ПОДРОБНЕЕ</a>
-                    <a href="">ЗАЯВКА НА РЕМОНТ</a>
-                </div>
-            </div>
-            <div class="tech-item">
-                <div class="tech-item__img" style="background-image: url('./img/tech/tech-item2.png');"></div>
-                <div class="tech-item__title">Плита на дачном участке</div>
-                <div class="tech-item__text">
-                    <div class="tech-item__text__b">Отдельностоящая плита</div>
-                    <div>0F5 EC142 615 Gr</div>
-                    <div class="tech-item__text__b">Статус: На гарании</div>
-                    <div>Гарантия до: 09.10.2022</div>
-                    <div class="tech-item__text__b">Код из паспорта</div>
-                    <div>123 12 78 789 5541 1547</div>
-                </div>
-                <div class="tech-item__btns">
-                    <a href="">ПОДРОБНЕЕ</a>
-                    <a href="">ЗАЯВКА НА РЕМОНТ</a>
-                </div>
-            </div>
-            <div class="tech-item">
-                <div class="tech-item__img" style="background-image: url('./img/tech/tech-item3.png');"></div>
-                <div class="tech-item__title">Плита на дачном участке</div>
-                <div class="tech-item__text">
-                    <div class="tech-item__text__b">Отдельностоящая плита</div>
-                    <div>0F5 EC142 615 Gr</div>
-                    <div class="tech-item__text__b">Статус: На гарании</div>
-                    <div>Гарантия до: 09.10.2022</div>
-                    <div class="tech-item__text__b">Код из паспорта</div>
-                    <div>123 12 78 789 5541 1547</div>
-                </div>
-                <div class="tech-item__btns">
-                    <a href="">ПОДРОБНЕЕ</a>
-                    <a class="v-rem">В РЕМОНТЕ</a>
-                </div>
-            </div>
-            <div class="tech-item">
-                <div class="tech-item__img" style="background-image: url('./img/tech/tech-item.png');"></div>
-                <div class="tech-item__title">Плита на дачном участке</div>
-                <div class="tech-item__text">
-                    <div class="tech-item__text__b">Отдельностоящая плита</div>
-                    <div>0F5 EC142 615 Gr</div>
-                    <div class="tech-item__text__b">Статус: На гарании</div>
-                    <div>Гарантия до: 09.10.2022</div>
-                    <div class="tech-item__text__b">Код из паспорта</div>
-                    <div>123 12 78 789 5541 1547</div>
-                </div>
-                <div class="tech-item__btns">
-                    <a href="">ПОДРОБНЕЕ</a>
-                    <a href="">ЗАЯВКА НА РЕМОНТ</a>
+                <div class="my-tech-add__right__name">
+                    Отдельностоящая плита
+                    1E6 GM241 019 Bg
                 </div>
             </div>
         </div>
-        <div class="cabinet__form__btns my-tech">
+        <div class="my-tech-file">
+            <div class="my-tech-file__t">Прикрепить чек из магазина</div>
+            <div class="my-tech-file__row">
+                <div class="my-tech-file__left">
+                    <label class="my-tech-file__label" for="file">
+                        ПРИКРЕПИТЬ ЧЕК ИЗ МАГАЗИНА
+                        <input type="file" id="file">
+                    </label>
+                </div>
+                <div class="my-tech-file__right">
+                    <div class="my-tech-file__check">Уже прикрепленый чек:</div>
+                    <div class="my-tech-file__ckeck-btns">
+                        <div class="my-tech-file__ckeck-btn">img-123233441-56.jpg
+                            <button></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkbox">
+                <input id="cheked1" type="checkbox" style="display: none;" checked="">
+                <label for="cheked1">Даю согласие на обработку персональных данных</label>
+            </div>
+        </div>
+        <div class="cabinet__form__btns my-tech--add">
             <a href="" class="btn btn-arr">
                 <img src="./img/icon/arrleft.png">
             </a>
-            <button type="submit" class="btn btn--in fancybox">ДОБАВИТЬ ТЕХНИКУ</button>
+            <button type="submit" class="btn btn--in fancybox">ДОБАВИТЬ</button>
         </div>
     </div>
 </div>
@@ -121,6 +118,7 @@
 <script src="./libs/jquery/jquery.min.js"></script>
 <script src="./libs/jq-valid/jq-valid.min.js"></script>
 <script src="./libs/fancybox/fancybox.js"></script>
+<script src="./libs/selectric/selectric.min.js"></script>
 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="./js/main.js"></script>

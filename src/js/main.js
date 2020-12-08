@@ -42,4 +42,7 @@ $(function(){
         }
     })
     
+
+    // селектор
+    $('.c-select').selectric()
 })
