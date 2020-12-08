@@ -22,6 +22,18 @@ $(function(){
         }
     });
 
+    $("#add-tovar-valid").validate({
+        submitHandler: function(form) {
+            // some other code
+            // maybe disabling submit button
+            // then:
+            $.fancybox.open({
+                src: '#zayvka', 
+                modal: true
+            });
+        }
+    });
+
     $(".l-data-valid").validate()
     $(".l-data-valid2").validate()
     
