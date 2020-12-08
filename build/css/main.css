@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'PFDinDisplay';
   src: url("../fonts/PFDinDisplayPro-Medium.eot");
@@ -941,7 +942,9 @@ h1 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3) inset;
   border-radius: 10px;
   height: 45px;
-  background-color: #fff;
+  background-color: #fff; }
+
+.selectric-wrapper {
   margin-bottom: 15px; }
 
 .my-tech-add {
@@ -970,14 +973,15 @@ h1 {
 .selectric .button:after {
   width: 0px;
   height: 5px;
-  border: 14px solid transparent;
+  border: 11px solid transparent;
   border-top-color: #5f5f5f;
   top: 22px; }
 
 .selectric .button {
   background-color: transparent;
   right: 5px;
-  top: 1px; }
+  top: 1px;
+  width: 30px; }
 
 .selectric-hover .selectric .button:after {
   border-top-color: #5f5f5f; }
@@ -989,7 +993,8 @@ h1 {
 
 .selectric-items {
   border-radius: 10px;
-  background-color: #fff; }
+  background-color: #fff;
+  overflow: hidden; }
 
 .selectric-items li {
   font-size: 14px; }
@@ -1131,3 +1136,155 @@ h1 {
     background-size: 18px;
     background-position: center left 9px;
     padding-left: 23px; } }
+
+.cab-tovar-slider__item {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  background-size: auto 150px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.cab-tovar__left {
+  width: 200px; }
+
+.slick-slider a:focus {
+  outline: none; }
+
+.slick-slider div:focus {
+  outline: none; }
+
+.cab-tovar-slider-nav__item {
+  height: 62px;
+  border: 2px solid #e6e6e6;
+  border-radius: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 7px; }
+
+.cab-tovar-slider-nav__item.slick-current {
+  border: 2px solid #e9454f; }
+
+.cab-tovar-slider-nav .slick-list {
+  margin: 0 -7px;
+  margin-top: 15px; }
+
+.cab-tovar {
+  display: -ms-flexbox;
+  display: flex; }
+
+.cab-tovar__right {
+  padding-left: 30px;
+  -ms-flex: 1;
+      flex: 1; }
+
+.cab-tovar__text {
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 25px; }
+
+.cab-tovar__text .b {
+  font-weight: 500;
+  color: #333333; }
+
+.cab-tovar__text .b:not(:first-child) {
+  margin-top: 10px; }
+
+.cab-tovar__right__row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
+  .cab-tovar__right__row .selectric-wrapper {
+    width: 120px;
+    margin-right: 15px; }
+  .cab-tovar__right__row .selectric {
+    height: 35px; }
+  .cab-tovar__right__row .selectric .label {
+    height: 35px;
+    line-height: 35px; }
+  .cab-tovar__right__row .selectric .button {
+    height: 35px; }
+  .cab-tovar__right__row .c-tovar-btn {
+    margin-top: -5px; }
+  .cab-tovar__right__row .selectric .button:after {
+    top: 14px; }
+
+.c-tovar-btn {
+  width: 172px;
+  cursor: pointer;
+  height: 35px;
+  background-color: #fff;
+  color: #4D4D4D;
+  font-weight: 500;
+  border: 2px solid #666666;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: 0.3s all;
+  font-size: 12px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.c-tovar-btn:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+
+.cab-tovar__right__link {
+  width: 200px; }
+
+.cab-tovar-slider:after {
+  content: "Увеличить";
+  background-image: url("../img/tech/search.png");
+  background-size: 15px;
+  background-position: center left;
+  background-repeat: no-repeat;
+  padding-left: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  font-size: 16px;
+  z-index: -1;
+  color: #999999;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+@media (max-width: 767px) {
+  .c-tovar--back {
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .cab-tovar {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+  .cab-tovar__left {
+    margin-bottom: 25px; }
+  .cab-tovar__right {
+    width: 100%;
+    padding-left: 0; } }
+
+.buy-garant__btns {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 25px; }
+
+.buy-garant__btns a {
+  width: 165px;
+  margin: 0; }
+
+.buy-garant__btns .btn-arr {
+  background-color: #fff;
+  width: 54px;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-right: 15px; }

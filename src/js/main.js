@@ -1,12 +1,5 @@
 $(function(){
-    // клик вне модалки
-    $(document).mouseup(function (e){ // событие клика по веб-документу
-		var div = $(".fancybox-content"); // тут указываем ID элемента
-		if (!div.is(e.target) // если клик был не по нашему блоку
-		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
-            $.fancybox.close();
-		}
-    });
+   
     
 
     // валидация
@@ -42,7 +35,10 @@ $(function(){
 
 
     // личные данные
-    $( "#datepicker" ).datepicker({ dateFormat: 'yy.mm.dd' });
+    if($( "#datepicker" ).length){
+        $( "#datepicker" ).datepicker({ dateFormat: 'yy.mm.dd' });
+    }
+    
 
     $('.input--watch button').on('click', function(){
         $(this).closest('.input--watch').toggleClass('active')
@@ -56,5 +52,37 @@ $(function(){
     
 
     // селектор
-    $('.c-select').selectric()
+    if($('.c-select').length){
+        $('.c-select').selectric()
+    }
+    
+
+
+    // карточка товара
+    $('.cab-tovar-slider').slick({
+        arrows: false,
+        fade: true,
+        asNavFor: '.cab-tovar-slider-nav',
+    })
+
+    $('.cab-tovar-slider-nav').slick({
+        arrows: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.cab-tovar-slider',
+        focusOnSelect: true,
+    })
+
+
+    $('.fancybox-g').fancybox({
+        buttons: [
+            "zoom",
+            //"share",
+            // "slideShow",
+            //"fullScreen",
+            //"download",
+            "thumbs",
+            "close"
+        ],
+    })
 })
