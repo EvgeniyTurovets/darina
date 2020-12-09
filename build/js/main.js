@@ -1,7 +1,4 @@
 $(function(){
-   
-    
-
     // валидация
     $(".valid").validate({
         submitHandler: function(form) {
@@ -84,5 +81,55 @@ $(function(){
             "thumbs",
             "close"
         ],
+    })
+
+    $('.buy-garant--step2').on('click', function(){
+        $.fancybox.close();
+        $.fancybox.open({
+            src: '#buy-garant2', 
+            modal: true
+        });
+        return false
+    })
+
+    if($('#start_date').length){
+        function customRange(input) 
+        { 
+        return {
+                minDate: (input.id == "end_date" ? $("#start_date").datepicker("getDate") : new Date())
+            }; 
+        }
+
+        // To set maxdate in startdate
+        function customRangeStart(input) 
+        { 
+        return {
+                maxDate:(input.id == "start_date" ? $("#end_date").datepicker("getDate") : null)
+            }; 
+        }
+
+
+        $('#start_date').datepicker(
+        {
+            beforeShow: customRangeStart,
+            maxDate: null,
+            dateFormat: "yy.mm.dd",
+            changeYear: true
+        });
+        
+        $('#end_date').datepicker(
+        {
+            beforeShow: customRange,
+            dateFormat: "yy.mm.dd",
+            changeYear: true
+        });
+    }
+    
+    
+    $('.filter-btn').on('click', function(){
+        $('.zayvki__filter').addClass('active')
+    })
+    $('.zayvki__filter .fancybox-close').on('click', function(){
+        $('.zayvki__filter').removeClass('active')
     })
 })
