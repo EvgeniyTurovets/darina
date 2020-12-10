@@ -132,4 +132,34 @@ $(function(){
     $('.zayvki__filter .fancybox-close').on('click', function(){
         $('.zayvki__filter').removeClass('active')
     })
+
+
+    // заявка детально
+    $(".otziv").validate({
+        submitHandler: function(form) {
+            // some other code
+            // maybe disabling submit button
+            // then:
+            $.fancybox.open({
+                src: '#otziv-modal', 
+                modal: true
+            });
+        }
+    });
+
+    // новая заявка
+    if($(window).width() > 767){
+        $('.new-zayvka__chekboxes').niceScroll({
+            cursorfixedheight: 10,
+            horizrailenabled:false,
+        });
+    }
+
+
+    $('.new-zayvka').validate({
+        submitHandler: function(form) {
+            
+        }
+    });
+    
 })
