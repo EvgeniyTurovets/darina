@@ -56,19 +56,22 @@ $(function(){
 
 
     // карточка товара
-    $('.cab-tovar-slider').slick({
-        arrows: false,
-        fade: true,
-        asNavFor: '.cab-tovar-slider-nav',
-    })
-
-    $('.cab-tovar-slider-nav').slick({
-        arrows: false,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.cab-tovar-slider',
-        focusOnSelect: true,
-    })
+    if($('.cab-tovar-slider').length){
+        $('.cab-tovar-slider').slick({
+            arrows: false,
+            fade: true,
+            asNavFor: '.cab-tovar-slider-nav',
+        })
+    
+        $('.cab-tovar-slider-nav').slick({
+            arrows: false,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            asNavFor: '.cab-tovar-slider',
+            focusOnSelect: true,
+        })
+    }
+    
 
 
     $('.fancybox-g').fancybox({
@@ -148,12 +151,15 @@ $(function(){
     });
 
     // новая заявка
-    if($(window).width() > 767){
-        $('.new-zayvka__chekboxes').niceScroll({
-            cursorfixedheight: 10,
-            horizrailenabled:false,
-        });
+    if($('.new-zayvka__chekboxes').length){
+        if($(window).width() > 767){
+            $('.new-zayvka__chekboxes').niceScroll({
+                cursorfixedheight: 10,
+                horizrailenabled:false,
+            });
+        }
     }
+    
 
 
     $('.new-zayvka').validate({
@@ -161,5 +167,51 @@ $(function(){
             
         }
     });
+
+
+    // бонусы
+    $('.bonus2').validate({
+        submitHandler: function(form) {
+            $.fancybox.open({
+                src: '#bonus2-modal', 
+                modal: true
+            });
+        }
+    });
+    
+    $('.bonus-podpis').validate({
+        submitHandler: function(form) {
+            $.fancybox.open({
+                src: '#bonus1-modal', 
+                modal: true
+            });
+        }
+    });
+
+    if($(".eTimer").length){
+        $(".eTimer").eTimer({
+            etType: 0, etDate: "18.12.2020.0.0", etTitleText: "До окончания акции осталось:", etTitleSize: 20, etShowSign: 1, etSep: ":", etFontFamily: "Arial", etTextColor: "#a3a3a3", etPaddingTB: 15, etPaddingLR: 15, etBackground: "#333333", etBorderSize: 0, etBorderRadius: 2, etBorderColor: "white", etShadow: " 0px 0px 10px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Impact", etNumberSize: 35, etNumberColor: "white", etNumberPaddingTB: 0, etNumberPaddingLR: 8, etNumberBackground: "#11abb0", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 10px 0px rgba(0, 0, 0, 0.5)"
+        });
+    }
+    
+    
+    $('.ruletka__fon').on('submit', function(){
+        $('.ruletka-round').removeClass('animate-round')
+        $('.ruletka-round').addClass('animate-round')
+        setTimeout(function(){
+            $('.ruletka-round').removeClass('animate-round')
+            
+        },1000)
+        setTimeout(function(){
+            $.fancybox.open({
+                src: '#bonus3-modal', 
+                modal: true
+            });
+        },1500)
+
+        
+        return false
+    })
+
     
 })

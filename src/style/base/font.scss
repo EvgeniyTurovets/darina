@@ -21,5 +21,15 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'PFDinDisplay';
+  src: url('../fonts/PFDinDisplayPro-Black.eot');
+  src: local('../fonts/PFDinDisplayPro-Black'),
+      url('../fonts/PFDinDisplayPro-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/PFDinDisplayPro-Black.woff2') format('woff2'),
+      url('../fonts/PFDinDisplayPro-Black.woff') format('woff'),
+      url('../fonts/PFDinDisplayPro-Black.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 
