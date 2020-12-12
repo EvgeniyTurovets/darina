@@ -77,7 +77,7 @@
             <a href="" class="btn btn-arr">
                 <img src="./img/icon/arrleft.png">
             </a>
-           <a href="" class="grey-link">НЕ НАШЛИ НУЖНОГО ТОВАРА?</a>
+           <a href="" class="grey-link" data-fancybox="" data-src="#magazin-ne-nashli" data-modal="true" href="javascript:;" >НЕ НАШЛИ НУЖНОГО ТОВАРА?</a>
         </div>
     </div>
 </div>
@@ -96,7 +96,7 @@
     </div>
     <div class="magazin__item__img" style="background-image: url('./img/magazin/1.png');"></div>
     <div class="modal-name2">
-        за 1000 баллов
+        за 1000 рублей
     </div>
     <p>
         Укажите ваши контактные данные
@@ -128,9 +128,44 @@
             <button class="grey-link" data-fancybox-close>ОТМЕНИТЬ</button>
         </div>
     </form>
-    
 </div>
 
+
+<div id="magazin-ne-nashli" class="modal-wrap" style="display: none;">
+    <button class="fancybox-close" data-fancybox-close>
+        <img src="./img/icon/close.png">
+    </button>
+    <div class="modal-name" style="margin-bottom: 10px;">
+        Не нашли нужного товара?
+    </div>
+   
+    <form>
+        <label>ФИО *</label>
+        <div class="input input--pers">
+            <input placeholder="Ваша фамилия, имя и отчество">
+        </div>
+        <label>E-mail *</label>
+        <div class="input input--mail">
+            <input placeholder="Ваш контактный E-mail">
+        </div>
+        <label>
+            Телефон *
+        </label>
+        <div class="input input--phone">
+            <input placeholder="Ваш контактный телефон">
+        </div>
+        <label>
+            Какой товар вы ищите?
+        </label>
+        <div class="input">
+            <textarea placeholder="Адрес по которому будет осуществлена доставка"></textarea>
+        </div>
+        <div class="magazin-buy__action">
+            <button class="grey-link">ОПЛАТИТЬ</button>
+            <button class="grey-link" data-fancybox-close>ОТМЕНИТЬ</button>
+        </div>
+    </form>
+</div>
 
 
 <script src="./libs/jquery/jquery.min.js"></script>
