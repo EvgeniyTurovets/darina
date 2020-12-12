@@ -213,5 +213,13 @@ $(function(){
         return false
     })
 
+
+    // Сервис
+    if($('.service__left').length){
+        $('.service__left').niceScroll({
+            cursorfixedheight: 10,
+            horizrailenabled:false,
+        });
+    }
     
 })
