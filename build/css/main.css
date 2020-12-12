@@ -2739,7 +2739,9 @@ h1 {
   transition: 0.3s all; }
 
 .grey-link:hover {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); }
+  border: 2px solid #E9454F;
+  background-color: #E9454F;
+  color: #fff; }
 
 .magazin__item__action .red-link {
   height: 35px;
@@ -2807,8 +2809,6 @@ h1 {
     height: 50px;
     width: 200px;
     margin: 0 8px; }
-  .magazin-buy__action .grey-link {
-    background-color: transparent; }
 
 @media (max-width: 1490px) {
   .magazin__item__action a {

@@ -2854,7 +2854,9 @@ h1 {
     transition: 0.3s all;
 }
 .grey-link:hover{
-    box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.4);
+    border: 2px solid #E9454F;
+    background-color: #E9454F;
+    color: #fff;
 }
 .magazin__item__action .red-link{
     height: 35px;
@@ -2924,9 +2926,7 @@ h1 {
         width: 200px;
         margin: 0 8px;
     }
-    .grey-link{
-        background-color: transparent;
-    }
+   
 }
 
 @media(max-width: 1490px){
