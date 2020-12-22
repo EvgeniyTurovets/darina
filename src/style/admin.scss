@@ -98,6 +98,7 @@
     width: 100%;
     background-image: none;
     font-weight: 500;
+    position: initial;
 }
 .my-tech-file__label--file{
     width: 226px;
@@ -108,4 +109,67 @@
         max-width: 483px;
         margin-bottom: 10px;
     }
+}
+
+.modal-wrap-table{
+    border-radius: 10px;
+    .modal-name{
+        text-align: center;
+    }
+    .search-input{
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 960px){
+    .search-input{
+        flex: auto;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 1199px){
+    .modal-wrap-table{
+        padding:35px 15px;
+    }
+
+    .new-zayvka__top__col{
+        width: calc(100% / 2 - 30px);
+    }
+    .new-zayvka__top__col.new-zayvka__top__col--btn{
+        width: calc(100% / 2 - 30px);
+    }
+}
+@media(max-width: 767px){
+    .new-zayvka__top__col{
+        width: calc(100%  - 30px);
+    }
+    .new-zayvka__top__col.new-zayvka__top__col--btn{
+        width: calc(100%  - 30px);
+    }
+}
+
+.magazin-buy__action a{
+    height: 50px;
+    width: 200px;
+    margin: 0 8px;
+    background-color: transparent;
+    color: #838383;
+}
+
+@media (max-width: 559px){
+    .magazin-buy__action a {
+        margin-bottom: 10px;
+    }
+}
+
+.admin-zayvka-opisanie{
+    padding: 30px;
+    border-bottom: 1px solid #c2c2c2;
+}
+.admin-zayvka__title{
+    font-size: 22px;
+    margin-bottom: 20px;
 }

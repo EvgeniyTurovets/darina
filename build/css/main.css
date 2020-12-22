@@ -1938,7 +1938,7 @@ h1 {
         flex-wrap: wrap;
     margin: 0 -10px; }
     .new-zayvka__chekboxes .radio {
-      width: calc(100% / 2 - 20px);
+      width: calc(100%  - 20px);
       margin: 0 10px; }
   .new-zayvka__chekboxes .radio input + label {
     width: 100%; } }
@@ -2841,7 +2841,7 @@ h1 {
     font-size: 12px;
     margin-bottom: 15px; } }
 
-@media (max-width: 424px) {
+@media (max-width: 559px) {
   .magazin-buy__action {
     -ms-flex-direction: column;
         flex-direction: column;

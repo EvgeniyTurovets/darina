@@ -1995,7 +1995,7 @@ h1 {
         flex-wrap: wrap;
         margin: 0 -10px;
         .radio{
-            width: calc(100% / 2 - 20px);
+            width: calc(100%  - 20px);
             margin: 0 10px;
         }
     }
@@ -2972,7 +2972,7 @@ h1 {
 }
 
 
-@media(max-width: 424px){
+@media(max-width: 559px){
     .magazin-buy__action{
         flex-direction: column;
         align-items: center;
