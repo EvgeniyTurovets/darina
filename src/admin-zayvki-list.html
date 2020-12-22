@@ -415,7 +415,23 @@
                     <img src="./img/icon/close.png">
                 </button>
             </div>
-           
+            <div class="zayvki__filter__text">По дате</div>
+            <div class="zayvki__filter__text">Период</div>
+            
+            <div class="filter__data">
+                <div class="filter__data__item">
+                    <div class="input">
+                        <input id="start_date" type="text" readonly>
+                    </div>
+                 </div>
+                <span>-</span>
+                <div class="filter__data__item">
+                    <div class="input">
+                        <input id="end_date" type="text" readonly>
+                    </div>
+                </div>
+            </div>
+
             <div class="zayvki__filter__text">По статусу заявки</div>
 
             <div class="zayvki__filter__checkboxs">
@@ -437,22 +453,32 @@
                 </div>
             </div>
 
-            <div class="zayvki__filter__text">По дате</div>
-            <div class="zayvki__filter__text">Период</div>
-            
-            <div class="filter__data">
-                <div class="filter__data__item">
-                    <div class="input">
-                        <input id="start_date" type="text" readonly="" class="hasDatepicker">
-                    </div>
-                 </div>
-                <span>-</span>
-                <div class="filter__data__item">
-                    <div class="input">
-                        <input id="end_date" type="text" readonly="" class="hasDatepicker">
-                    </div>
+            <div class="zayvki__filter__text">По статусу заявки</div>
+
+            <div class="zayvki__filter__checkboxs">
+                <div class="checkbox">
+                    <input id="cheked1" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked1">Передано в СЦ</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked2" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked2">Обрабатывается</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked3" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked3">В ремонте</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked4" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked4">Закрыта</label>
                 </div>
             </div>
+
+            <div class="zayvki__filter__text">По статусу заявки</div>
+
+           
+
+            
             <div class="filter__data">
                 <button class="filter__data__btn1">ПРИМЕНИТЬ</button>
                 <button class="filter__data__btn2">СБРОСИТЬ</button>

@@ -2,10 +2,9 @@
     margin-bottom: 0;
     background-image: url(../img/admin/list/search-loop.png);
     background-position: left 12px center;
-    background-size: 25px;
+    background-size: 20px;
     background-repeat: no-repeat;
-    padding-right: 55px;
-    padding-left: 50px;
+    padding-right: 50px;
 }
 .search-input{
     flex: 1;
@@ -62,3 +61,51 @@
     padding: 10px;
 }
 
+.zayvki__filter{
+    overflow: auto;
+    
+}
+
+.zayvki__filter::-webkit-scrollbar {
+    width: 10px;
+    }
+    
+/* Track */
+.zayvki__filter::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.zayvki__filter::-webkit-scrollbar-thumb {
+    background: #ed1c24;
+}
+
+/* Handle on hover */
+.zayvki__filter::-webkit-scrollbar-thumb:hover {
+    background: #ed1c24;
+}
+.new-zayvka__top__col{
+    width: calc(100% / 3 - 30px - 77px);
+}
+
+.new-zayvka__top__col.new-zayvka__top__col--btn{
+    width: 200px;
+}
+.new-zayvka__top__col.new-zayvka__top__col--btn .input button{
+    width: 100%;
+    border-radius: 10px;
+    color: #fff;
+    width: 100%;
+    background-image: none;
+    font-weight: 500;
+}
+.my-tech-file__label--file{
+    width: 226px;
+}
+
+.new-zayvka__bot{
+    .search-input.input{
+        max-width: 483px;
+        margin-bottom: 10px;
+    }
+}
