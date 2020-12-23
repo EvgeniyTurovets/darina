@@ -1965,7 +1965,7 @@ h1 {
   line-height: 19px;
   margin-bottom: 15px; }
 
-.label {
+label.label {
   font-size: 16px;
   display: block;
   margin-bottom: 5px;

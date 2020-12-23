@@ -448,3 +448,115 @@ a.adm-list-del{
         padding-bottom: 60%;
     }
 }
+
+
+.admin-download{
+    display: flex;
+    flex-wrap: wrap;
+    .filter__data{
+        width: 260px
+    }
+}
+.admin-download__col-big{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.admin-download__col{
+    width: 50%;
+    padding-right: 15px;
+}
+
+.admin-download__name{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.admin-download__item{
+    margin-bottom: 25px;
+}
+.admin-download__item:last-child{
+    margin-bottom: 0;
+}
+.label.label--alert{
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 22px;
+}
+.label.label--alert:before{
+    content:"";
+    position: absolute;
+    background-image: url('../img/admin/down/alert.svg');
+    width: 16px;
+    display: inline-block;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    top: 1px;
+    left: 0;
+}
+
+.admin-download-wraper{
+    display: flex;
+    flex-wrap: wrap;
+    .btn-red{
+        margin-right: 15px;
+    }
+    .my-tech-file__ckeck-btn{
+        height: 48px;
+    }
+    .my-tech-file__ckeck-btn button:after{
+        top: 50%;
+    }
+    .my-tech-file__ckeck-btn button:before{
+        top: 50%;
+    }
+    .selectric{
+        height: 48px;
+    }
+    .selectric-wrapper{
+        max-width: 332px;
+        width: 100%;
+        margin-right: 15px;
+    }
+    .input{
+        margin-right: 15px;
+        width: 100%;
+        max-width: 331px;
+    }
+    .input input{
+        height: 48px;
+        padding-left: 15px;
+        
+    }
+}
+
+.btn.btn-grey{
+    border: 2px solid #999999;
+    color: #999999;
+    font-weight: 500;
+    transition: .3s all;
+}
+.btn.btn-grey:hover{
+    opacity: 0.9;
+}
+
+@media(max-width: 1199px){
+    .admin-download__col{
+        width: 100%;
+        padding-right: 0;
+    }
+    .admin-download__item:last-child{
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width: 559px){
+    .admin-download-wraper .btn-red{
+        margin-bottom: 15px;
+    }
+    .admin-download__name{
+        font-size: 20px;
+    }
+ 
+}

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/fancybox/fancybox.min.css'>
+    <link rel="stylesheet" href="./libs/jquery/jquery-ui.css">
+    <link rel="stylesheet" href="./libs/selectric/selectric.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/admin.min.css'>
+</head>
+<body>
+<div class="cabinet">
+    <div class="container">
+        <h1>СКАЧАТЬ СТАТИСТИКУ</h1>
+       
+        <div class="admin-download">
+            <div class="admin-download__col-big">
+                <label class="label">Период</label>
+                <div class="filter__data">
+                    <div class="filter__data__item">
+                        <div class="input">
+                            <input id="start_date" type="text" readonly="" >
+                        </div>
+                     </div>
+                    <span>-</span>
+                    <div class="filter__data__item">
+                        <div class="input">
+                            <input id="end_date" type="text" readonly="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-download__col">
+                <div class="admin-download__item">
+                    <div class="admin-download__name">Качество работы сервис-центров</div>
+                    <label class="label label--alert">Если не выбран конкретный СЦ, то скачаютя данные по всем СЦ</label>
+                    <div class="admin-download-wraper">
+                        <button class="btn btn-red" data-fancybox="" data-src="#viborizspiska" data-modal="true">ВЫБРАТЬ ИЗ СПИСКА</button>
+                        <div class="my-tech-file__ckeck-btns">
+                            <div class="my-tech-file__ckeck-btn">img-123233441-56.jpg
+                                <button type="button"></button>
+                            </div>
+                            <!-- <div class="my-tech-file__ckeck-btn">img-123233441-56.jpg
+                                <button type="button"></button>
+                            </div> -->
+                        </div>
+                        <a class="btn btn-grey" href="" download>СКАЧАТЬ</a>
+                    </div>
+                </div>
+
+                <div class="admin-download__item">
+                    <div class="admin-download__name">Скорость обработки заявок</div>
+                    <label class="label label--alert">Если не выбран конкретный СЦ, то скачаютя данные по всем СЦ</label>
+                    <div class="admin-download-wraper">
+                        <button class="btn btn-red" data-fancybox="" data-src="#viborizspiska" data-modal="true">ВЫБРАТЬ ИЗ СПИСКА</button>
+                        <div class="my-tech-file__ckeck-btns">
+                            <div class="my-tech-file__ckeck-btn">img-123233441-56.jpg
+                                <button type="button"></button>
+                            </div>
+                            <!-- <div class="my-tech-file__ckeck-btn">img-123233441-56.jpg
+                                <button type="button"></button>
+                            </div> -->
+                        </div>
+                        <a class="btn btn-grey" href="" download>СКАЧАТЬ</a>
+                    </div>
+                </div>
+
+                <div class="admin-download__item">
+                    <div class="admin-download__name">Скорость ремонта техники в СЦ</div>
+                    <label class="label label--alert">Если не выбран конкретный СЦ, то скачаютя данные по всем СЦ</label>
+                    <div class="admin-download-wraper">
+                        <button class="btn btn-red" data-fancybox="" data-src="#viborizspiska" data-modal="true">ВЫБРАТЬ ИЗ СПИСКА</button>
+                        <div class="my-tech-file__ckeck-btns">
+                            <div class="my-tech-file__ckeck-btn">img-123233441-56.jpg
+                                <button type="button"></button>
+                            </div>
+                            <!-- <div class="my-tech-file__ckeck-btn">img-123233441-56.jpg
+                                <button type="button"></button>
+                            </div> -->
+                        </div>
+                        <a class="btn btn-grey" href="" download>СКАЧАТЬ</a>
+                    </div>
+                </div>
+
+                <div class="admin-download__item">
+                    <div class="admin-download__name">Стоимость ремонта техники в сервис центре</div>
+                    <label class="label label--alert">Если не выбран конкретный СЦ, то скачаютя данные по всем СЦ</label>
+                    <div class="admin-download-wraper">
+                        <button class="btn btn-red" data-fancybox="" data-src="#viborizspiska" data-modal="true">ВЫБРАТЬ ИЗ СПИСКА</button>
+                        <div class="my-tech-file__ckeck-btns">
+                            <div class="my-tech-file__ckeck-btn">img-123233441-56.jpg
+                                <button type="button"></button>
+                            </div>
+                            <!-- <div class="my-tech-file__ckeck-btn">img-123233441-56.jpg
+                                <button type="button"></button>
+                            </div> -->
+                        </div>
+                        <a class="btn btn-grey" href="" download>СКАЧАТЬ</a>
+                    </div>
+                </div>
+
+                <div class="admin-download__item">
+                    <div class="admin-download__name">База клиентов по товарам</div>
+                    <div class="admin-download-wraper">
+                        <a class="btn btn-grey" href="" download>СКАЧАТЬ</a>
+                    </div>
+                </div>
+
+                <div class="admin-download__item">
+                    <div class="admin-download__name">Счетчик клиентов</div>
+                    <label class="label">Тип клиента</label>
+                    <div class="admin-download-wraper">
+                        <select class="c-select">
+                            <option>Все</option>
+                            <option>не все</option>
+                        </select>
+                        <a class="btn btn-grey" href="" download>СКАЧАТЬ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="admin-download__col">
+                <div class="admin-download__item">
+                    <div class="admin-download__name">Наиболее частые поломки запасных частей</div>
+                    <div class="admin-download-wraper">
+                        <a class="btn btn-grey" href="" download>СКАЧАТЬ</a>
+                    </div>
+                </div>
+                <div class="admin-download__item">
+                    <div class="admin-download__name">Наиболее ломающиеся модели</div>
+                    <div class="admin-download-wraper">
+                        <a class="btn btn-grey" href="" download>СКАЧАТЬ</a>
+                    </div>
+                </div>
+                <div class="admin-download__item">
+                    <div class="admin-download__name">Бракованые партии</div>
+                    <div class="admin-download-wraper">
+                        <a class="btn btn-grey" href="" download>СКАЧАТЬ</a>
+                    </div>
+                </div>
+
+                <div class="admin-download__item">
+                    <div class="admin-download__name">Бракованые партии</div>
+                    <label class="label">Серийный номер *</label>
+                    <div class="admin-download-wraper">
+                        <div class="input">
+                            <input type="text" value="SN-123-GF-2309-BQ-55">
+                        </div>
+                        <a class="btn btn-grey" href="" download>СКАЧАТЬ</a>
+                    </div>
+                </div>
+                <div class="admin-download__item">
+                    <div class="admin-download__name">Количество запросов за период</div>
+                    <div class="admin-download-wraper">
+                        <a class="btn btn-grey" href="" download>СКАЧАТЬ</a>
+                    </div>
+                </div>
+                <div class="admin-download__item">
+                    <div class="admin-download__name">Количество отремонтированной техники за период</div>
+                    <div class="admin-download-wraper">
+                        <a class="btn btn-grey" href="" download>СКАЧАТЬ</a>
+                    </div>
+                </div>
+                <div class="admin-download__item">
+                    <div class="admin-download__name">Количество запросов на покупку запасных частей</div>
+                    <div class="admin-download-wraper">
+                        <a class="btn btn-grey" href="" download>СКАЧАТЬ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cabinet__form__btns my-tech--add">
+            <a href="" class="btn btn-arr">
+                <img src="./img/icon/arrleft.png">
+            </a>
+           
+        </div>
+        
+        
+        
+    </div>
+</div>
+<!-- модалки -->
+<div id="viborizspiska" class="modal-wrap-table" style="display: none;">
+    <button class="fancybox-close" data-fancybox-close>
+        <img src="./img/icon/close.png">
+    </button>
+    <div class="modal-name">
+        Выбор пользователя
+    </div>
+    <div class="zayvki__top">
+        <div class="search-input input">
+            <input type="text" placeholder="Введите ID, Имя, E-mail или телефон пользователя"> 
+            <button></button>
+        </div>
+    </div>
+    
+    <div class="zayvki__table__wrap">
+        <table class="zayvki__table">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Пользователь</td>
+                    <td>E-Mail</td>
+                    <td>Телефон</td>
+                    <td>Тип пользователя</td>
+                    <td>Дата регистрации</td>
+                    <td>Кол-во техники</td>
+                    <td>Кол-во заявок</td>
+                    <td></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="zayvki__alert">158985
+                            
+                        </div>
+                    </td>
+                    <td>
+                        <a href="">Мартиросян В.И.</a>
+                    </td>
+                    <td>
+                        123@123.ru
+                    </td>
+                    <td>
+                        + 7 (888) 999-56-21
+                    </td>
+                    <td>
+                        Клиент
+                    </td>
+                    <td>
+                        12.08.2020
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        12
+                    </td>
+                   
+                    <td>
+                        <a href="">Выбрать</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="zayvki__alert">158985
+                            
+                        </div>
+                    </td>
+                    <td>
+                        <a href="">Мартиросян В.И.</a>
+                    </td>
+                    <td>
+                        123@123.ru
+                    </td>
+                    <td>
+                        + 7 (888) 999-56-21
+                    </td>
+                    <td>
+                        Клиент
+                    </td>
+                    <td>
+                        12.08.2020
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        12
+                    </td>
+                   
+                    <td>
+                        <a href="">Выбрать</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="zayvki__alert">158985
+                            
+                        </div>
+                    </td>
+                    <td>
+                        <a href="">Мартиросян В.И.</a>
+                    </td>
+                    <td>
+                        123@123.ru
+                    </td>
+                    <td>
+                        + 7 (888) 999-56-21
+                    </td>
+                    <td>
+                        Клиент
+                    </td>
+                    <td>
+                        12.08.2020
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        12
+                    </td>
+                   
+                    <td>
+                        <a href="">Выбрать</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="zayvki__alert">158985
+                            
+                        </div>
+                    </td>
+                    <td>
+                        <a href="">Мартиросян В.И.</a>
+                    </td>
+                    <td>
+                        123@123.ru
+                    </td>
+                    <td>
+                        + 7 (888) 999-56-21
+                    </td>
+                    <td>
+                        Клиент
+                    </td>
+                    <td>
+                        12.08.2020
+                    </td>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        12
+                    </td>
+                   
+                    <td>
+                        <a href="">Выбрать</a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+</div>
+
+<script src="./libs/jquery/jquery.min.js"></script>
+<script src="./libs/jq-valid/jq-valid.min.js"></script>
+<script src="./libs/fancybox/fancybox.js"></script>
+<script src="./libs/selectric/selectric.min.js"></script>
+<script src="./libs/jquery/jquery-ui.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
