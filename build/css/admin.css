@@ -326,3 +326,22 @@
   .l-data-item.file .my-tech-file__row {
     margin-bottom: 0;
     margin-top: 15px; }
+
+a.adm-list-del {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  a.adm-list-del img {
+    width: 14px;
+    margin-right: 5px; }
+
+.l-cabinet.client-data .l-cabinet__top {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 15px; }
+
+.l-data__wrap .bonus-podpis__wrap input {
+  padding-left: 15px; }

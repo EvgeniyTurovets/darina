@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/fancybox/fancybox.min.css'>
+    <link rel="stylesheet" href="./libs/jquery/jquery-ui.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/admin.min.css'>
+</head>
+<body>
+<div class="cabinet">
+    <div class="container">
+        <h1>КАБИНЕТ АДМИНИСТРАТОРА</h1>
+        <div class="l-cabinet client-data">
+            <div class="zayvki__top">
+                <div class="zayvki__left">
+                    <span class="zayvki__left__item">Данные клиента</span>
+                    <a class="zayvki__left__item" href="">Активные заявки</a>
+                    <a class="zayvki__left__item" href="">Архивные заявки</a>
+                </div>
+            </div>
+            <div class="l-cabinet__top">
+                <div class="l-cabinet__logo">
+                    <img src="./img/cabinet/main.jpg">
+                </div>
+                <div class="l-cabinet__info">
+                    <ul>
+                        <li>
+                            <b>ФИО:</b> Леонрадо Вильгельм Ди Каприо
+                        </li>
+                        <li>
+                            <b>E-mail:</b> leo-d@mail.ru
+                        </li>
+                        <li>
+                            <b>Телефон:</b> +7 (123) 123-12-31
+                        </li>
+                        <li>
+                            <b>ID пользователя: </b>123123544
+                        </li>
+                        <li>
+                            <b>Дата рождения:</b> 01.01.1971
+                        </li>
+                        <li>
+                            <b>Подтверждено техники:</b> 12
+                        </li>
+                        <li>
+                            <b>Бонусных баллов:</b> 14859
+                        </li>
+                         
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class="l-data__wrap">
+                <h2 class="l-data__h2">Техника клиента</h2>
+                <div class="zayvki__table__wrap">
+                    <table class="zayvki__table">
+                        <thead>
+                            <tr>
+                                <td>Название</td>
+                               
+                                <td>
+                                    <div class="t-name">
+                                        Наименование продукции
+                                    </div>
+                                </td>
+                                <td>Дата добавления</td>
+                                <td>Статус гарантии</td>
+                                <td>Гарантия до</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    Плита на даче
+                                </td>
+                               
+                                <td>
+                                    <div class="t-name">
+                                        Отдельностоящая плита 0F5 EC142 615 Gr
+                                    </div>
+                                </td>
+
+                                <td>
+                                    12.08.2020
+                                </td>
+                                
+                                <td>
+                                    <div class="t-color">
+                                        <span style="background-color: #ed1c24;"></span>
+                                        Не гарантийная
+                                    </div>
+                                </td>
+
+                                <td>
+                                    12.08.2020
+                                </td>
+                              
+                                <td>
+                                    <a href="">Подробнее</a>
+                                </td>
+
+                                <td >
+                                    <a class="adm-list-del" href=""><img src="./img/admin/list/del.svg" >Удалить</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Плита на даче
+                                </td>
+                               
+                                <td>
+                                    <div class="t-name">
+                                        Отдельностоящая плита 0F5 EC142 615 Gr
+                                    </div>
+                                </td>
+
+                                <td>
+                                    12.08.2020
+                                </td>
+                                
+                                <td>
+                                    <div class="t-color">
+                                        <span style="background-color: #ed1c24;"></span>
+                                        Не гарантийная
+                                    </div>
+                                </td>
+
+                                <td>
+                                    12.08.2020
+                                </td>
+                              
+                                <td>
+                                    <a href="">Подробнее</a>
+                                </td>
+
+                                <td >
+                                    <a class="adm-list-del" href=""><img src="./img/admin/list/del.svg" >Удалить</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <div class="l-data__wrap">
+                <form class="bonus-podpis" novalidate="novalidate">
+                    <h2>Подписка на новости сайта</h2>
+                    <label class="label">Количество бонусных баллов</label>
+                    <div class="bonus-podpis__wrap">
+                        <div class="input"><input type="" name="ress-pass" placeholder="Введите количество бонусных баллов" required="">
+                        </div>
+                        <button type="submit" class="red-link">НАЧИСЛИТЬ</button>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="cabinet__form__btns my-tech--add">
+                <a href="" class="btn btn-arr">
+                    <img src="./img/icon/arrleft.png">
+                </a>
+                <a href="" type="submit" class="btn btn--in fancybox">РЕДАКТИРОВАТЬ ДАННЫЕ КЛИЕНТА</a>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+
+<script src="./libs/jquery/jquery.min.js"></script>
+<script src="./libs/jq-valid/jq-valid.min.js"></script>
+<script src="./libs/fancybox/fancybox.js"></script>
+<script src="./libs/selectric/selectric.min.js"></script>
+<script src="./libs/jquery/jquery-ui.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

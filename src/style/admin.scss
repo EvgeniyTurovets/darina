@@ -384,3 +384,25 @@
         margin-top: 15px;
     }
 }
+a.adm-list-del{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 14px;
+        margin-right: 5px;
+    }
+    
+}
+
+.l-cabinet.client-data{
+    .l-cabinet__top{
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.l-data__wrap .bonus-podpis__wrap input{
+    padding-left: 15px;
+}
