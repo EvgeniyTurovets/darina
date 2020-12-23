@@ -362,6 +362,7 @@
     .cabinet__form__btns .btn {
         margin-bottom: 15px;
         margin-right: 24px;
+        text-align: center;
     }
 }
 
@@ -408,4 +409,8 @@ a.adm-list-del{
 
 .l-data__wrap .bonus-podpis__wrap input{
     padding-left: 15px;
+}
+
+.zayvki__top.arhiv-list .search-input{
+    margin-right: 0;
 }

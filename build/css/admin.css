@@ -307,7 +307,8 @@
 @media (max-width: 767px) {
   .cabinet__form__btns .btn {
     margin-bottom: 15px;
-    margin-right: 24px; } }
+    margin-right: 24px;
+    text-align: center; } }
 
 .l-data__wrap .checkbox {
   margin-bottom: 15px; }
@@ -347,3 +348,6 @@ a.adm-list-del {
 
 .l-data__wrap .bonus-podpis__wrap input {
   padding-left: 15px; }
+
+.zayvki__top.arhiv-list .search-input {
+  margin-right: 0; }
