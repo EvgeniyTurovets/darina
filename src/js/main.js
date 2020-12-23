@@ -221,5 +221,14 @@ $(function(){
             horizrailenabled:false,
         });
     }
-    
+
+
+    // админ
+    // список заявок
+    $('.new-filter-setting-btn').on('click', function(){
+        $('.new-filter-setting').addClass('active')
+    })
+    $('.new-filter-setting .fancybox-close').on('click', function(){
+        $('.new-filter-setting').removeClass('active')
+    })
 })

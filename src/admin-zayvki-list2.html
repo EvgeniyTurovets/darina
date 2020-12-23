@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/fancybox/fancybox.min.css'>
+    <link rel="stylesheet" href="./libs/jquery/jquery-ui.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/admin.min.css'>
+</head>
+<body>
+<div class="cabinet">
+    <div class="container">
+        <h1>СПИСОК ЗАЯВОК</h1>
+        <div class="zayvki__top">
+            <div class="search-input input">
+                <input type="text" placeholder="Введите ID, Имя, E-mail или телефон пользователя"> 
+                <button></button>
+            </div>
+            <button class="filter-btn"><img src="./img/icon/filter.png">ФИЛЬТР</button>
+        </div>
+        <div class="zayvki__table__wrap">
+            <table class="zayvki__table">
+                <thead>
+                    <tr>
+                        <td>№ заявки</td>
+                        <td>Пользователь</td>
+                        <td>E-Mail</td>
+                        <td>Телефон</td>
+                        <td>Тип пользователя</td>
+                        <td>Дата регистрации</td>
+                        <td>Кол-во техники</td>
+                        <td>Кол-во заявок</td>
+                        <td>
+                            <button type="button" class="new-filter-setting-btn"><img class="adm-list-img" src="./img/admin/list/set.svg"></button>
+                        </td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="zayvki__alert">158985
+                                <span class="span">!
+                                    <div class="l-cabinet__count__hover">
+                                        <span>Не выбран СЦ</span>
+                                    </div>
+                                </span>
+                            </div>
+                        </td>
+
+                        <td>
+                            <a href="">Мартиросян В.И.</a>
+                        </td>
+                       
+                        <td>
+                            123@123.ru
+                        </td>
+
+                        <td>
+                            +7 (495) 569-89-16
+                        </td>
+
+                        <td>
+                            Клиент
+                        </td>
+
+                        <td>
+                            12.08.2020
+                        </td>
+
+                        <td>
+                           1
+                        </td>
+
+                        <td>
+                            1
+                        </td>
+
+                        <td>
+                            <a href=""><img class="adm-list-img" src="./img/admin/list/watch.svg"></a>
+                            <a href=""><img class="adm-list-img adm-list-img--red" src="./img/admin/list/red.svg"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="zayvki__alert">158985
+                                <span class="span">!
+                                    <div class="l-cabinet__count__hover">
+                                        <span>Не выбран СЦ</span>
+                                    </div>
+                                </span>
+                            </div>
+                        </td>
+
+                        <td>
+                            <a href="">Мартиросян В.И.</a>
+                        </td>
+                       
+                        <td>
+                            123@123.ru
+                        </td>
+
+                        <td>
+                            +7 (495) 569-89-16
+                        </td>
+
+                        <td>
+                            Клиент
+                        </td>
+
+                        <td>
+                            12.08.2020
+                        </td>
+
+                        <td>
+                           1
+                        </td>
+
+                        <td>
+                            1
+                        </td>
+
+                        <td>
+                            <a href=""><img class="adm-list-img" src="./img/admin/list/watch.svg"></a>
+                            <a href=""><img class="adm-list-img adm-list-img--red" src="./img/admin/list/red.svg"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="zayvki__alert">158985
+                                <span class="span">!
+                                    <div class="l-cabinet__count__hover">
+                                        <span>Не выбран СЦ</span>
+                                    </div>
+                                </span>
+                            </div>
+                        </td>
+
+                        <td>
+                            <a href="">Мартиросян В.И.</a>
+                        </td>
+                       
+                        <td>
+                            123@123.ru
+                        </td>
+
+                        <td>
+                            +7 (495) 569-89-16
+                        </td>
+
+                        <td>
+                            Клиент
+                        </td>
+
+                        <td>
+                            12.08.2020
+                        </td>
+
+                        <td>
+                           1
+                        </td>
+
+                        <td>
+                            1
+                        </td>
+
+                        <td>
+                            <a href=""><img class="adm-list-img" src="./img/admin/list/watch.svg"></a>
+                            <a href=""><img class="adm-list-img adm-list-img--red" src="./img/admin/list/red.svg"></a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+        <div class="cabinet__form__btns my-tech--add">
+            <a href="" class="btn btn-arr">
+                <img src="./img/icon/arrleft.png">
+            </a>
+            <a href="" type="submit" class="btn btn--in fancybox">ДОБАВИТЬ КЛИЕНТА</a>
+            <a href="" type="submit" class="btn btn--in fancybox">ДОБАВИТЬ МОДЕРАТОРА</a>
+            <a href="" type="submit" class="btn btn--in fancybox">ДОБАВИТЬ СЦ</a>
+
+        </div>
+
+
+        <div class="zayvki__filter">
+            <div class="zayvki__filter__top">
+                Фильтр
+                <button class="fancybox-close" data-fancybox-close="">
+                    <img src="./img/icon/close.png">
+                </button>
+            </div>
+            <div class="zayvki__filter__text">По дате</div>
+            <div class="zayvki__filter__text">Период</div>
+            
+            <div class="filter__data">
+                <div class="filter__data__item">
+                    <div class="input">
+                        <input id="start_date" type="text" readonly>
+                    </div>
+                 </div>
+                <span>-</span>
+                <div class="filter__data__item">
+                    <div class="input">
+                        <input id="end_date" type="text" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <div class="zayvki__filter__text">По статусу заявки</div>
+
+            <div class="zayvki__filter__checkboxs">
+                <div class="checkbox">
+                    <input id="cheked1" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked1">Передано в СЦ</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked2" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked2">Обрабатывается</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked3" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked3">В ремонте</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked4" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked4">Закрыта</label>
+                </div>
+            </div>
+
+            <div class="zayvki__filter__text">По статусу заявки</div>
+
+            <div class="zayvki__filter__checkboxs">
+                <div class="checkbox">
+                    <input id="cheked1" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked1">Передано в СЦ</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked2" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked2">Обрабатывается</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked3" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked3">В ремонте</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked4" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked4">Закрыта</label>
+                </div>
+            </div>
+            
+            <div class="filter__data">
+                <button class="filter__data__btn1">ПРИМЕНИТЬ</button>
+                <button class="filter__data__btn2">СБРОСИТЬ</button>
+            </div>
+        </div>
+
+
+        <div class="new-filter-setting">
+            <div class="zayvki__filter__top">
+                Настройка списка
+                <button class="fancybox-close" data-fancybox-close="">
+                    <img src="./img/icon/close.png">
+                </button>
+            </div>
+     
+
+          
+
+            <div class="zayvki__filter__checkboxs">
+                <div class="checkbox">
+                    <input id="cheked11" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked11">Дата регистрации</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked222" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked222">Тип пользователя</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked333" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked333">Тип заявки</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked4" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked4">Наличие техники</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked22" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked22">Кол-вол техники</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked33" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked33">Кол-вол заявок</label>
+                </div>
+                <div class="checkbox">
+                    <input id="cheked44" type="checkbox" style="display: none;" checked="">
+                    <label for="cheked44">Показывать технику клиента</label>
+                </div>
+            </div>
+
+
+            <div class="filter__data">
+                <button class="filter__data__btn1">ПРИМЕНИТЬ</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="./libs/jquery/jquery.min.js"></script>
+<script src="./libs/jq-valid/jq-valid.min.js"></script>
+<script src="./libs/fancybox/fancybox.js"></script>
+<script src="./libs/selectric/selectric.min.js"></script>
+<script src="./libs/jquery/jquery-ui.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html> 

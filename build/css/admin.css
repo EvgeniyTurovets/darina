@@ -254,3 +254,64 @@
         flex-direction: column; }
   .admin-zayvka-opisanie .left-search {
     margin-bottom: 25px; } }
+
+.adm-list-img {
+  width: 21px;
+  margin: 0 7px; }
+
+.adm-list-img.adm-list-img--red {
+  width: 15px; }
+
+.new-filter-setting-btn {
+  background-color: transparent;
+  cursor: pointer; }
+
+.new-filter-setting {
+  position: fixed;
+  top: 0;
+  right: -1000px;
+  bottom: 0;
+  width: 320px;
+  background: #f6f6f6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  z-index: 101;
+  transition: width .2s ease-out;
+  padding: 25px;
+  transition: .3s all;
+  overflow: auto; }
+
+.new-filter-setting.active {
+  right: 103px; }
+
+.new-filter-setting::-webkit-scrollbar {
+  width: 10px; }
+
+/* Track */
+.new-filter-setting::-webkit-scrollbar-track {
+  background: #f1f1f1; }
+
+/* Handle */
+.new-filter-setting::-webkit-scrollbar-thumb {
+  background: #ed1c24; }
+
+/* Handle on hover */
+.new-filter-setting::-webkit-scrollbar-thumb:hover {
+  background: #ed1c24; }
+
+.cabinet__form__btns {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+@media (max-width: 767px) {
+  .cabinet__form__btns .btn {
+    margin-bottom: 15px;
+    margin-right: 24px; } }
+
+.l-data__wrap .checkbox {
+  margin-bottom: 15px; }
+
+.l-data__wrap .zayvki__table__wrap {
+  margin-bottom: 20px; }
+
+.l-data__wrap .t-color {
+  text-align: center; }
