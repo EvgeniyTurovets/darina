@@ -14,55 +14,69 @@
 <body>
 <div class="cabinet">
     <div class="container">
-        <h1>ДОБАВЛЕНИЕ / РЕДАКТИРОВАНИЕ КЛИЕНТА</h1>
+        <h1>ДОБАВЛЕНИЕ / РЕДАКТИРОВАНИЕ СЕРВИСНОГО ЦЕНТРА</h1>
         <div class="l-data">
             <div class="l-data__wrap">
                 <form class="l-data__form l-data-valid">
+                  
                     <div class="l-data__row">
                         <div class="l-data-item">
                             <label>Название филиала *</label>
-                            <div class="input input--edit"><input type="text" value="СЕВЕР" name="name" placeholder="Введите вашу фамилию" required></div>
-                        </div>
-                    </div>
-                    <div class="l-data__row">
-                        <div class="l-data-item">
-                            <label>Фамилия *</label>
-                            <div class="input input--edit"><input type="text" value="Ди каприо" name="name" placeholder="Введите вашу фамилию" required></div>
+                            <div class="input input--edit"><input type="text" value="ООО «Рассвет»" name="name" placeholder="Введите вашу фамилию" required></div>
                         </div>
                         <div class="l-data-item">
-                            <label>Имя*</label>
-                            <div class="input input--edit"><input type="text" value="Ди каприо" name="name2" placeholder="Введите ваше имя" required></div>
+                            <label>E-mail (используется как логин) *</label>
+                            <div class="input input--edit"><input type="text" value="leo-d@mail.ru" name="name2" placeholder="Введите ваше имя" required></div>
                         </div>
                         <div class="l-data-item">
-                            <label>Отчество</label>
-                            <div class="input input--edit"><input type="text" value="Ди каприо" name="name3" placeholder="Введите ваше отчество"></div>
-                        </div>
-                        <div class="l-data-item mini">
-                            <label>Дата рождения</label>
-                            <div class="input"><input type="text" id="datepicker" value="01.01.1971" name="name4"></div>
-                        </div>
-                 
-                  
-                        <div class="l-data-item">
-                            <label>E-Mail *</label>
-                            <div class="input input--edit"><input type="email" value="test@test.test" name="name5" placeholder="Введите вашу фамилию" required></div>
-                        </div>
-                        <div class="l-data-item">
-                            <label>Телефон *</label>
-                            <div class="input input--edit"><input type="text" value="Ди каприо" name="name6" placeholder="Введите ваше имя" required></div>
-                        </div>
-                        <div class="l-data-item">
-                            <label>Город *</label>
-                            <div class="input input--edit"><input type="text" value="Ди каприо" name="name7" placeholder="Введите ваше отчество"></div>
+                            <label>Контактный e-mail для клиентов *</label>
+                            <div class="input input--edit"><input type="text" value="ivan@ii.ru" name="name3" placeholder="Введите ваше отчество"></div>
                         </div>
                         <div class="l-data-item mini">
                             <label>Клиентский ID</label>
                             <div class="input input--diactive"><input type="text" value="123123544" name="name8"></div>
                         </div>
+                 
+                  
+                        <div class="l-data-item">
+                            <label>Телефон (если несколько, то через запятую) *</label>
+                            <div class="input input--edit"><input type="email" value="+7 (123) 123-12-31, +7 (123) 123-12-33" name="name5" placeholder="Введите вашу фамилию" required></div>
+                        </div>
+                        <div class="l-data-item">
+                            <label>Адрес</label>
+                            <div class="input input--edit"><input type="text" value="Россия, Челябинск, 1-го Мая, 1, стр. 2, корп. 7" name="name6" placeholder="Введите ваше имя" required></div>
+                        </div>
+
+                        <div class="l-data-item file">
+                            <div class="my-tech-file__row">
+                                <div class="my-tech-file__left">
+                                    <label class="my-tech-file__label my-tech-file__label--file" for="file">
+                                        ПРИКРЕПИТЬ ФАЙЛЫ
+                                        <input type="file" id="file">
+                                    </label>
+                                </div>
+                                <div class="my-tech-file__right">
+                                    <div class="my-tech-file__check">Уже прикреплен</div>
+                                    <div class="my-tech-file__ckeck-btns">
+                                        <div class="my-tech-file__ckeck-btn">img-123233441-56.jpg
+                                            <button type="button"></button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <button type="submit" class="l-data__btn btn">СОХРАНИТЬ</button>
+                    
                 </form>
             </div>
+
+            <div class="l-data__wrap">
+                <h2 class="l-data__h2">Установить точку на карте *</h2>
+                <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/geo/moskva/53166393/?ll=37.646921%2C55.725146&utm_medium=mapframe&utm_source=maps&z=10" style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCQlQ6qHXA" width="100%" height="499" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+            </div>
+
             <div class="l-data__wrap">
                 <h2 class="l-data__h2">Задать пароль</h2>
                 <form class="l-data__form l-data-valid2">
@@ -91,7 +105,9 @@
                     <button type="submit" class="l-data__btn btn">СОХРАНИТЬ</button>
                 </form>
             </div>
+            
           
+
             <div class="l-data__wrap">
                 <h2 class="l-data__h2">Сменить пароль</h2>
                 <form class="l-data__form l-data-valid2">

@@ -373,3 +373,14 @@
 .l-data__wrap .t-color{
     text-align: center;
 }
+
+.l-data-item.file{
+    width: 100%;
+    max-width: 565px;
+    display: flex;
+    align-items: center;
+    .my-tech-file__row{
+        margin-bottom: 0;
+        margin-top: 15px;
+    }
+}
