@@ -475,4 +475,6 @@ a.adm-list-del {
   .admin-download-wraper .btn-red {
     margin-bottom: 15px; }
   .admin-download__name {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .btn-bonus {
+    width: 100%; } }
