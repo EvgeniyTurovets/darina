@@ -1899,7 +1899,8 @@ h1 {
     border-radius: 10px;
     width: 100%;
     height: 122px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    resize: none; }
   .new-zayvka__bot .new-zayvka label {
     display: -ms-flexbox;
     display: flex; }

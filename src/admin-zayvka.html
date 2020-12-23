@@ -57,14 +57,55 @@
             
         <div class="admin-zayvka-opisanie">
             <div class="admin-zayvka-opisanie__left">
-                <div class="admin-zayvka__title">
-                    Описание поломки
-                </div>
-                <textarea placeholder="Описание возникшей проблемы с техникой"></textarea>
+                <div class="admin-zayvka__title">Описание поломки</div>
+                <textarea class="admin-textarea" placeholder="Описание возникшей проблемы с техникой"></textarea>
             </div>
-            <div class="admin-zayvka-opisanie__right"></div>
+            <div class="admin-zayvka-opisanie__right">
+                <div class="admin-zayvka-opisanie__block">
+                    <div class="admin-zayvka__title">Клиент</div>
+                    <a href="">Хисамутдинов Д.Р.</a>
+                    <span>+7 (123) 123-23-45</span>
+                    <a href="">123@123.ru</a>
+                    <div class="admin-zayvka__title">Модератор</div>
+                    <a href="">Супко Б.Х.</a>
+                </div>
+                <div class="admin-zayvka-opisanie__block">
+                    <div class="admin-zayvka__title">Сервисный центр</div>
+                    <button class="btn btn-red">ВЫБРАТЬ ИЗ СПИСКА</button>
+                    <div class="my-tech-file__ckeck-btns">
+                        <div class="my-tech-file__ckeck-btn">img-123233441-56.jpg
+                            <button type="button"></button>
+                        </div>
+                        <div class="my-tech-file__ckeck-btn">img-123233441-56.jpg
+                            <button type="button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
+        <div class="admin-zayvka-opisanie admin-zayvka-opisanie2">
+            <div class="left-search">
+                <div class="admin-zayvka__title">Деталь вышедшая из строя</div>
+                <div class="search-input input">
+                    <input placeholder="Поиск по базе деталей конкретной модели">
+                    <button></button>
+                </div>
+                <div class="my-tech-file__ckeck-btns no--link">
+                    <div class="my-tech-file__ckeck-btn">Центрифуга
+                        <button type="button"></button>
+                    </div>
+                    <div class="my-tech-file__ckeck-btn">Колонка
+                        <button type="button"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-search">
+                <div class="admin-zayvka__title">Описание проблемы с деталями</div>
+                <textarea class="admin-textarea" placeholder="Описание возникшей проблемы с техникой"></textarea>
+            </div>
+        </div>
+
         <div class="zayvka-d__block">
             
             <div class="zayvka-d__row">
@@ -92,6 +133,19 @@
                     <p>
                         Голос персонажа начинает размер. Метонимия существенно дает мелодический реципиент, туда же попадает и еще недавно вызывавший безусловную симпатию гетевский Вертер. Ложная цитата, в первом приближении, жизненно иллюстрирует цикл, именно поэтому голос автора романа не имеет никаких преимуществ перед голосами персонажей. В отличие от произведений поэтов барокко, парономазия параллельна.
                     </p>
+                </div>
+            </div>
+
+            <div class="zayvka-d__row">
+                <div class="zayvka-d__row__left">
+                    <select class="c-select">
+                        <option>Обрабатывается</option>
+                        <option>Передано в СЦ</option>
+                    </select>
+                </div>
+                <div class="zayvka-d__row__rgiht">
+                    <textarea class="admin-textarea" placeholder="Комментарий к статусу"></textarea>
+                    <button class="btn btn-red">СОХРАНИТЬ</button>
                 </div>
             </div>
 
