@@ -478,3 +478,102 @@ a.adm-list-del {
     font-size: 20px; }
   .btn-bonus {
     width: 100%; } }
+
+.ruletka__row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  margin-bottom: 10px; }
+
+.ruletka__minus {
+  -ms-flex-preferred-size: 63px;
+      flex-basis: 63px;
+  margin-bottom: 16px; }
+  .ruletka__minus button {
+    background-color: transparent;
+    border: 2px solid #999999;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    color: #999999;
+    cursor: pointer; }
+
+.ruletka__plus {
+  -ms-flex-preferred-size: 63px;
+      flex-basis: 63px;
+  margin-bottom: 16px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+  .ruletka__plus button {
+    background-color: transparent;
+    border: 2px solid #999999;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    color: #999999;
+    cursor: pointer; }
+
+.ruletka__wraper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+      align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -10px;
+  width: 100%;
+  max-width: 1095px; }
+
+.ruletka__col {
+  width: calc(100% / 3 - 20px);
+  margin: 0 10px; }
+  .ruletka__col input {
+    padding-left: 15px; }
+
+.ruletka__wrap {
+  min-height: 500px;
+  margin-top: 20px; }
+
+.ruletka__col input:disabled {
+  background-color: #E6E6E6; }
+
+@media (max-width: 1023px) {
+  .ruletka__col {
+    width: calc(100% / 2 - 20px); }
+  .ruletka__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 25px 0; }
+  .ruletka__plus {
+    -ms-flex-order: 2;
+        order: 2;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 0 5px;
+    -ms-flex-pack: start;
+        justify-content: flex-start; }
+  .ruletka__minus {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    -ms-flex-order: 1;
+        order: 1;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 0 5px; } }
+
+@media (max-width: 767px) {
+  .ruletka__col {
+    width: 100%;
+    margin: 0; }
+  .ruletka__wraper {
+    margin: 0; }
+  .ruletka__wrap {
+    margin-top: 0; } }
