@@ -402,7 +402,8 @@ a.adm-list-del {
 .admin-download__name {
   font-size: 22px;
   font-weight: 500;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  color: #333333; }
 
 .admin-download__item {
   margin-bottom: 25px; }
@@ -577,3 +578,21 @@ a.adm-list-del {
     margin: 0; }
   .ruletka__wrap {
     margin-top: 0; } }
+
+.my-tech-add-admin {
+  padding-left: 30px;
+  width: 210px; }
+  .my-tech-add-admin button {
+    margin-right: 0;
+    background-color: transparent; }
+
+@media (max-width: 1023px) {
+  .my-tech-add {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .my-tech-add-admin {
+    padding-left: 0;
+    width: 100%;
+    margin-bottom: 25px; }
+    .my-tech-add-admin .input {
+      max-width: 452px; } }

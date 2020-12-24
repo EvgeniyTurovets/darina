@@ -470,6 +470,7 @@ a.adm-list-del{
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 10px;
+    color: #333333;
 }
 .admin-download__item{
     margin-bottom: 25px;
@@ -659,5 +660,29 @@ a.adm-list-del{
     }
     .ruletka__wrap{
         margin-top: 0;
+    }
+}
+
+
+.my-tech-add-admin{
+    padding-left: 30px;
+    width: 210px;
+    button{
+        margin-right: 0;
+        background-color: transparent;
+    }
+}
+
+@media(max-width: 1023px){
+    .my-tech-add{
+        flex-wrap: wrap;
+    }
+    .my-tech-add-admin{
+        padding-left: 0;
+        width: 100%;
+        .input{
+            max-width: 452px;
+        }
+        margin-bottom: 25px;
     }
 }
