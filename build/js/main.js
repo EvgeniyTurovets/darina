@@ -231,4 +231,86 @@ $(function(){
     $('.new-filter-setting .fancybox-close').on('click', function(){
         $('.new-filter-setting').removeClass('active')
     })
+
+
+
+    $("[data-tooltip]").mousemove(function (eventObject) {
+        $data_tooltip = $(this).attr("data-tooltip");
+        $("#tooltip").html($data_tooltip)
+            .css({ 
+              "top" : eventObject.pageY + 5,
+              "left" : eventObject.pageX + 5
+            })
+            .show();
+        }).mouseout(function () {
+          $("#tooltip").hide()
+            .html("")
+            .css({
+                "top" : 0,
+                "left" : 0
+            });
+    });
+
+    $('.new-zayvka__chekboxes .radio').on('click', function(){
+        let dataImg = $(this).attr('data-img')
+        let dataText = $(this).attr('data-text')
+        console.log(dataText)
+        $(this).closest('.new-zayvka__vibor__item').find('.new-zayvka__vibor__right__img').css('background-image', 'url(' + dataImg + ')');
+        $(this).closest('.new-zayvka__vibor__item').find('.new-zayvka__vibor__right__text').text(dataText)
+    })
+
+
+    $('.new-zayvka__vibor__item .c-select').on('change', function() {
+        let dataImg = $(this).find('option:selected').attr('data-img')
+        let dataText = $(this).find('option:selected').attr('data-text')
+        $(this).closest('.new-zayvka__vibor__item').find('.new-zayvka__vibor__right__img').css('background-image', 'url(' + dataImg + ')');
+        $(this).closest('.new-zayvka__vibor__item').find('.new-zayvka__vibor__right__text').text(dataText)
+    });
+
+    $('.m-model').on('change', function() {
+        let dataImg = $(this).find('option:selected').attr('data-img')
+        let dataText = $(this).find('option:selected').attr('data-text')
+        $('.tech-item__img').css('background-image', 'url(' + dataImg + ')');
+        $('.my-tech-add__right__name').text(dataText)
+    });
+   
+
+
+    // скрипиы для добавления и удаления файлов и пользователей
+    $("body").on("click", ".my-tech-file__ckeck-btn button", function () {
+        $(this).parent('.my-tech-file__ckeck-btn').fadeOut(200)
+        setTimeout(function(){
+            $(this).parent('.my-tech-file__ckeck-btn').remove()
+        },250)
+    });
+
+    $('#file').on('change',function(e){
+        let fileNAme = e.target.files[0].name
+        let fileBody = '<div class="my-tech-file__ckeck-btn">' + fileNAme + '<button type="button"></button></div>'
+        $(this).closest('.my-tech-file__row').find('.my-tech-file__ckeck-btns').append(fileBody);
+    })
+        
+
+    // страница статистики
+    let btnChangeClick;
+
+    $('.admin-download-wraper button[data-fancybox]').on('click', function(){
+        btnChangeClick = $(this)
+    })
+
+
+
+    let ruletkaRowHtml = $('.ruletka__row').eq(1).html()
+    // настройки руслетки
+    $("body").on("click", ".ruletka__minus button", function () {
+        $(this).closest('.ruletka__row').slideUp(200)
+        setTimeout(function(){
+            $(this).closest('.ruletka__row').remove()
+        },350)
+
+    })
+    $("body").on("click", ".ruletka__plus button", function () {
+        $('.ruletka__wrap').after('<div class="ruletka__row">'+ruletkaRowHtml+'</div>')
+       
+    })
 })

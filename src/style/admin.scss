@@ -224,6 +224,7 @@
 }
 .admin-zayvka-opisanie__block .my-tech-file__ckeck-btns{
     flex-direction: column;
+    align-items: flex-start;
 }
 .admin-zayvka-opisanie__block{
     margin-right: 70px;
@@ -336,7 +337,11 @@
 .new-filter-setting.active{
     right: 103px;
 }
-
+@media(max-width: 1199px){
+    .new-filter-setting.active{
+        right: 0px;
+    }
+}
 .new-filter-setting::-webkit-scrollbar {
     width: 10px;
     }
@@ -619,7 +624,6 @@ a.adm-list-del{
     }
 }
 .ruletka__wrap{
-    min-height: 500px;
     margin-top: 20px;
 }
 
